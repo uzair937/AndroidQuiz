@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="586dp"
+        android:layout_marginEnd="249dp"
+        android:visibility="gone"
+        android:text="Test" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="379dp"
+        android:layout_height="97dp"
+        android:layout_alignEnd="@+id/answerGroup"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="3dp"
+        android:text="Question"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="135dp"
+        android:layout_height="32dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="230dp"
+        android:layout_marginBottom="264dp"
+        android:text="Score: "
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-255dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toStartOf="@+id/score"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/hintButton"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="602dp"
+        android:layout_marginEnd="20dp"
+        android:text="Hint" />
+
+    <RadioGroup
+        android:id="@+id/answerGroup"
+        android:layout_width="381dp"
+        android:layout_height="188dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="75dp">
+        <!--android:checkedButton="@+id/sound"-->
+
+        <RadioButton
+            android:id="@+id/answer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="answer1"
+            android:textAlignment="center" />
+
+        <RadioButton
+            android:id="@+id/answer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="answer2"
+            android:textAlignment="center" />
+
+        <RadioButton
+            android:id="@+id/answer3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="answer3"
+            android:textAlignment="center" />
+
+        <RadioButton
+            android:id="@+id/answer4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="answer4"
+            android:textAlignment="center" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="321dp"
+        android:layout_height="247dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="111dp"
+        tools:srcCompat="@tools:sample/avatars[11]" />
+
+    <TextView
+        android:id="@+id/timeView"
+        android:layout_width="178dp"
+        android:layout_height="32dp"
+        android:layout_alignStart="@+id/answerGroup"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="264dp"
+        android:text="Time: "
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/quit"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/submit"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Quit Game" />
+
+</RelativeLayout>
